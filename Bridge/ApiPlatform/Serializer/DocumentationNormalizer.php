@@ -31,7 +31,7 @@ final class DocumentationNormalizer implements NormalizerInterface
 
         // Add POST /forgot-password/ path
         $docs['tags'][] = ['name' => 'Forgot password'];
-        $docs['paths']['/forgot-password/']['post'] = [
+        $docs['paths']['/api/forgot-password/']['post'] = [
             'tags' => ['Forgot password'],
             'operationId' => 'postForgotPassword',
             'summary' => 'Generates a token and send email',
@@ -69,7 +69,7 @@ final class DocumentationNormalizer implements NormalizerInterface
         ];
 
         // Add GET /forgot-password/{token} path
-        $docs['paths']['/forgot-password/{token}']['get'] = [
+        $docs['paths']['/api/forgot-password/{token}']['get'] = [
             'tags' => ['Forgot password'],
             'operationId' => 'getForgotPassword',
             'summary' => 'Validates token',
@@ -105,7 +105,7 @@ final class DocumentationNormalizer implements NormalizerInterface
         ];
 
         // Add POST /forgot-password/{token} path
-        $docs['paths']['/forgot-password/{token}']['post'] = [
+        $docs['paths']['/api/forgot-password/{token}']['post'] = [
             'tags' => ['Forgot password'],
             'operationId' => 'postForgotPasswordToken',
             'summary' => 'Resets user password from token',
