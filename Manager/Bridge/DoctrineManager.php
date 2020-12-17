@@ -11,7 +11,7 @@
 
 namespace CoopTilleuls\ForgotPasswordBundle\Manager\Bridge;
 
-use Doctrine\Common\Persistence\ManagerRegistry;
+use Doctrine\Persistence\ManagerRegistry;
 
 /**
  * @author Vincent Chalamon <vincent@les-tilleuls.coop>

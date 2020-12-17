@@ -12,9 +12,9 @@
 namespace Tests\ForgotPasswordBundle\Manager\Bridge;
 
 use CoopTilleuls\ForgotPasswordBundle\Manager\Bridge\DoctrineManager;
-use Doctrine\Common\Persistence\ManagerRegistry;
-use Doctrine\Common\Persistence\ObjectManager;
-use Doctrine\Common\Persistence\ObjectRepository;
+use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectRepository;
 
 /**
  * @author Vincent Chalamon <vincent@les-tilleuls.coop>
