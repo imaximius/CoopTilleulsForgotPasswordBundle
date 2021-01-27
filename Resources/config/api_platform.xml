@@ -5,7 +5,7 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <service id="coop_tilleuls_forgot_password.normalizer.documentation" public="true"
-                 decorates="api_platform.swagger.normalizer.documentation"
+                 decorates="api_platform.openapi.normalizer.api_gateway"
                  class="CoopTilleuls\ForgotPasswordBundle\Bridge\ApiPlatform\Serializer\DocumentationNormalizer">
             <argument type="service" id="coop_tilleuls_forgot_password.normalizer.documentation.inner"/>
         </service>
